@@ -1,0 +1,22 @@
+p {
+    color: rgb(111, 175, 190);
+}
+main p {
+    color: rgb(189, 58, 62);
+}
+header h1 {
+    color: rgb(46, 50, 173);
+}
+#main-title {
+    color: rgb(47, 151, 81);
+}
+.orange {
+    color : orange;
+}
+.purple {
+    color: purple;
+}
+.bigger {
+    font-size: 15pt;
+    font-weight: bold;
+}
