@@ -1,0 +1,23 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background: url('photobg.jpg') no-repeat center center;
+    background-repeat: repeat;
+    color: yellowgreen;
+}
+
+nav a {
+    color: pink 
+}
+.current {
+    color:red
+}
+header {
+    color: yellowgreen
+}
+.flag {
+    background: url('fijiflag.jpg') no-repeat right;
+    object-fit:contain
+}
+main {
+    list-style-image: url('independenceday.png');
+}
