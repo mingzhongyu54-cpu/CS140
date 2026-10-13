@@ -1,0 +1,32 @@
+body {
+    font-family: Arial, sans-serif;
+}
+* {
+    outline: thin solid red;
+}
+.p1 {
+    margin: 20px;
+    padding: 30px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: black;
+}
+.p2 {
+    margin: 20px;
+    padding: 30px;
+    border-width: 5px;
+    border-style: dotted;
+    border-color: black;
+}
+.p3 {
+    border: thin solid black;
+    padding: 30px 10px;
+}
+.list {
+    margin: 20px;
+    padding: 30px;
+    overflow: scroll;
+    border-width: 5px;
+    border-style: solid;
+    border-color: black;
+}
