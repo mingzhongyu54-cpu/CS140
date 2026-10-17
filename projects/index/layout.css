@@ -27,7 +27,6 @@ main {
     background-origin: border-box;
     background-color: white;
     width: 900px;
-    height: 900px;
     margin: 0 auto;
     border: thick solid black;
     color: white
@@ -53,8 +52,6 @@ h1 {
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
     color: black
 }
-footer {
-    color: white
-}
+
 //font-size,font-weight,font-style,line-height,text-align,text-transform,text-shadow
 //height, width, margin, padding, border,border radius,boxshadow
