@@ -1,0 +1,74 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+}
+header {
+    background-color: black;
+    color: white;
+}
+header h1 {
+    margin: 0;
+}
+html {
+    margin: 0;
+}
+nav {
+    display: flex;
+    justify-content: space-around;
+    background-color: yellow;
+}
+nav a {
+    font-size:larger;
+    display: block;
+    padding: 5px 20px;
+    background-color: blue;
+    color: greenyellow;
+}
+.mainrow {
+    display: flex;
+}
+.sidebar {
+    width: 75%;
+}
+main {
+    width: 25%;
+}
+.card-container {
+    display:flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+.card {
+    border: 1px thin solid;
+    border-radius: 10px;
+    width: 250px;
+    overflow: hidden;
+}
+.card img {
+    width: 100%;
+}
+.card h2 {
+    margin: 0;
+}
+.card a {
+    display: block;
+    padding: 10px;
+    background-color: rgb(57, 101, 141);
+    width: 60%;
+    margin-bottom: 0 auto 5px auto;
+    border-radius: 5px;
+    color:aqua;
+}
+@media print {
+    nav {
+        display: none;
+    }
+    
+    .sidebar {
+        display: none;
+    }
+
+    body {
+        font-family: 'Courier New', Courier, monospace;
+    }
+}
