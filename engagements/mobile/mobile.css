@@ -18,7 +18,6 @@ nav {
     background-color: yellow;
 }
 nav a {
-    font-size:larger;
     display: block;
     padding: 5px 20px;
     background-color: blue;
@@ -31,7 +30,7 @@ nav a {
     width: 75%;
 }
 main {
-    width: 25%;
+    width: 75%;
 }
 .card-container {
     display:flex;
@@ -39,7 +38,7 @@ main {
     gap: 10px;
 }
 .card {
-    border: 1px thin solid;
+    border: 1px solid black;
     border-radius: 10px;
     width: 250px;
     overflow: hidden;
