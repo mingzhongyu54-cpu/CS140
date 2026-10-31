@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MingZhong's Web Design Page</title>
+    <link rel="stylesheet" href="family.css">
+</head>
+<body>
+    <header>
+        <h1>Bear Family</h1>
+    </header>
+    <button class="menu-toggle" aria-expanded="false" aria-controls="site-nav">
+    ☰ Menu
+    </button>
+    <nav id="site-nav">
+        <a href="#">Home</a>
+        <a href="#">About</a>
+        <a href="#">Contact</a>
+        <a href="#">Info</a>
+        <a href="#">Details</a>
+    </nav>
+    <div class="mainrow">
+        <div class="sidebar">
+            <h1>We Bare Bears</h1>
+            <img src="bearhugging.jpg" alt="Ice Bear from We Bare Bears">
+            <ul>
+                <li>We Bare Bears follows three bear brothers—Grizzly, Panda, and Ice Bear—as they try to fit in and make friends with people.</li>
+                <li>Grizzly is energetic and outgoing, Panda is sweet and enjoys using his phone, and Ice Bear is quiet and very capable.</li>
+                <li>Even though the brothers have different personalities and it not directly blood-reltaed, they care about one another and stick together.</li>
+            </ul>
+        </div>
+        <main>
+            <h1>The Family Trio</h1>
+            <div class="card-container">
+                <article class="card">
+                    <img src="panda.jpg" alt="Panda from We Bare Bears">
+                    <h2>Panda</h2>
+                    <p>Panda is the middle brother in We Bare Bears. He loves using his phone, taking selfies, and staying connected online. Panda is sweet and sensitive, but he can be shy around people he likes.</p>
+                </article>
+                <article class="card">
+                    <img src="grizzly.jpg" alt="Grizzly from We Bare Bears">
+                    <h2>Grizzly</h2>
+                    <p>Grizzly is the oldest bear in We Bare Bears. He is energetic, confident, and always ready for an adventure. Grizzly cares deeply about his brothers and likes bringing people together.</p>
+                </article>
+                <article class="card">
+                    <img src="icebear.jpg" alt="Ice Bear from We Bare Bears">
+                    <h2>Ice Bear</h2>
+                    <p>Ice Bear is the youngest brother in We Bare Bears. He is quiet, calm, and very skilled at cooking and fixing things. Ice Bear cares about his brothers and often protects them.</p>
+                </article>
+            </div>
+        </main>
+    </div>
+    <footer>
+        <p>&copy; 2026 MingZhong Yu</p>
+    </footer> 
+<script>
+    const menuButton = document.querySelector(".menu-toggle");
+    const nav = document.querySelector("#site-nav");
+
+    menuButton.addEventListener("click", () => {
+        const isOpen = nav.classList.toggle("menu-open");
+        menuButton.setAttribute("aria-expanded", isOpen);
+    });
+</script>
+</body> 
+</html>
