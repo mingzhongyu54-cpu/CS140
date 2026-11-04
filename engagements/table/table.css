@@ -1,11 +1,27 @@
 body {
     font-family: Arial, Helvetica, sans-serif;
 }
-table, th, td {
-    font-family: "Courier New", monospace;
-  border: 3px double black;
-  border-collapse: collapse;
+#schedule th, #schedule td {
+    border: 1px solid #000; 
 }
-th {
-    font: bold; 
+.tablediv {
+    overflow: auto;
+}
+#schedule {
+    border: 1px solid #000;
+    border-spacing: 5px;
+    border-colapse: separate;
+}
+caption {
+  caption-side: bottom;
+}
+#schedule tbody th, #schedule thead th {
+    background-color: aqua;
+    color: blueviolet;
+}
+#schedule tbody tr:nth-child(even) {
+    background-color: oklch(88.484% 0.17647 127.256);
+}
+#schedule tbody tr td:last-child {
+    text-align: right;
 }
