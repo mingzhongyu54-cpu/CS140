@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Form</title>
-    <link rel="stylesheet" href="">
+    <link rel="stylesheet" href="form.css">
 </head>
 <body>
     <header>
@@ -17,42 +17,52 @@
     </nav>
     <main>
         <h2>Sign Up</h2>
+        
+        
         <form action="formprocessing.html" method="post">
-            <div class="form-row">
-                <label for="personname">Full Name :</label>
-                <input id="personname" type="text" name="fullname" placeholder="Full Name">
-            </div>
-            <div class="form-row">
-                <label for="personemail">Email :</label>
-                <input id="personemail" type="email" name="email" placeholder="Email">
-            </div>
-            <div class="form-row">
-                <label for="personpassword">Password :</label>
-                <input id="personpassword" type="password" name="pass" value="mingzhongyu@byuh.edu">
-            </div>
-            <div class="form-row">
-                <label for="state">State</label>
-                <select name="state" id="state">
-                    <option value="blank">--------</option>
-                    <option value="CA">Califonia</option>
-                    <option value="HI">Hawaii</option>
-                    <option value="UT">Utah</option>
-                </select>
             <fieldset>
-                <legend>Select your Gender:</legend>
+                <legend>Account</legend>
+                <div class="form-row">
+                    <label for="personname">Full Name :</label>
+                    <input id="personname" type="text" name="fullname" placeholder="Full Name">
+                </div>
+                <div class="form-row">
+                    <label for="personemail">Email :</label>
+                    <input id="personemail" type="email" name="email" placeholder="Email">
+                </div>
+                <div class="form-row">
+                    <label for="personpassword">Password :</label>
+                    <input id="personpassword" type="password" name="pass" value="mingzhongyu@byuh.edu">
+                </div>
+                <div class="form-row">
+                    <label for="state">State</label>
+                    <select name="state" id="state">
+                        <option value="blank">--------</option>
+                        <option value="CA">Califonia</option>
+                        <option value="HI">Hawaii</option>
+                        <option value="UT">Utah</option>
+                    </select>
+                <div class="form-row">
+                    <label><input type="checkbox" name="remmber">Remember Me?</label>
+                </div>
+                <fieldset>
+                    <legend>Select your Gender:</legend>
 
-                <label>
-                    <input type="radio" name="gender" value="man">Man
-                </label>
-                <label>
-                    <input type="radio" name="gender" value="female">female
-                </label>
-            </fieldset>
-            </div>
-            <div class="form-row">
-            <input type="submit">
-            </div>
-            
+                    <label>
+                        <input type="radio" name="gender" value="man">Man
+                    </label>
+                    <label>
+                        <input type="radio" name="gender" value="female">female
+                    </label>
+                </fieldset>
+                <div class=""form-row">
+                <label for="comments">Comments</label>
+                <textarea name=""comments" id=""comments"></textarea>
+                </div>
+                <div class="form-row">
+                <input type="submit">
+                </div>
+            </fieldset>   
         </form>
        
         <p>The form tag has an "action" attribute. What does it do? The action button tells the browser where to send the data.</p>
