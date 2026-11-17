@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+    <link rel="stylesheet" href="form.css">
+</head>
+<body>
+    <header>
+        <h1>MingZhong's Website</h1>
+    </header>
+    <nav>
+        <a href="#">Home</a>
+        <a href="#">About</a>
+        <a href="#">Contact</a>
+    </nav>
+    <main>
+        <h2>Sign Up</h2>
+        
+        
+        <form action="formprocessing.html" method="post" id="signup-form">
+            <fieldset>
+                <legend>Account</legend>
+                <div class="form-row">
+                    <label for="personname">Full Name :</label>
+                    <input id="personname" type="text" name="fullname" placeholder="Full Name">
+                </div>
+                <div class="form-row">
+                    <label for="personemail">Email :</label>
+                    <input id="personemail" type="email" name="email" placeholder="Email">
+                </div>
+                <div class="form-row">
+                    <label for="age">Age:</label>
+                    <input id="age" type="number" name="age" min="1" max="1000">
+                </div>
+                <div class="form-row">
+                    <label for="personpassword">Password :</label>
+                    <input id="personpassword" type="password" name="pass">
+                </div>
+                <div class="form-row">
+                    <label for="state">State</label>
+                    <select name="state" id="state">
+                        <option value="blank">--------</option>
+                        <option value="CA">California</option>
+                        <option value="HI">Hawaii</option>
+                        <option value="UT">Utah</option>
+                    </select>
+                </div>
+                <div class="form-row">
+                    <label><input type="checkbox" name="remember">Remember Me?</label>
+                </div>
+                <fieldset>
+                    <legend>Select your Gender:</legend>
+
+                    <label>
+                        <input type="radio" name="gender" value="male">Male
+                    </label>
+                    <label>
+                        <input type="radio" name="gender" value="female">Female
+                    </label>
+                </fieldset>
+                <div class="form-row">
+                <label for="comments">Comments</label>
+                <textarea name="comments" id="comments"></textarea>
+                </div>
+                <div class="form-row">
+                <input type="submit">
+                </div>
+            </fieldset>   
+        </form>
+        <p>1. What is JavaScript? How did it get its name? JavaScript is a programming language used to make websites interactive. It allows websites to respond to user actions, such as clicking buttons and submitting forms. JavaScript was named after Java after it got popular in late 90's.</p>
+        <p>2. You can run JavaScript internally through the "script" tag, or you can run it externlly by creating a ".js" file.</p>
+        <p>3. JQuery is a JavaScript library that makes running JS more easier. However, the popularity of JQUery is decreasing in recent years as JavaScript can do many of the same tasks without using JQuery.</p>
+        <p>4. React.js is currrently the most used front-end JS library</p>
+        <p>5. My JavaScript uses event.preventDefault() to stop the form from submitting automatically. This allows the code to check whether the user entered a name, email, and valid age before continuing. We have to prevent submission if users hasn't completed filling in their information..</p>
+    </main>
+    <footer>
+    <p>&copy; 2026 MingZhong Yu</p>
+    </footer> 
+    <script>
+            document.getElementById('signup-form').addEventListener('submit', function(event) {
+                event.preventDefault();
+                //aler("Form Submitted");
+
+                const fullname = document.getElementById('personname').value;
+                const email = document.getElementById('personemail').value;
+                const password = document.getElementById('personpassword').value;
+                const age = Number(document.getElementById('age').value);
+
+                if (!fullname || !email){
+                    alert("You need a name and emaiil.");
+                    return;
+                }
+
+                if (!age || age<18){
+                    alert("You need to be 18.");
+                    return;
+                }
+
+                const formData = {
+                    name: fullname,
+                    email: email,
+                    password: password,
+                    age: age,
+                };
+                console.log(formData);
+                alert("Form submitted successfully!")
+            });
+    </script>
+</body> 
+</html>
