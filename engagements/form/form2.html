@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+    <link rel="stylesheet" href="form2.css">
+</head>
+<body>
+    <header>
+        <h1>MingZhong's Website</h1>
+    </header>
+    <nav>
+        <a href="#">Home</a>
+        <a href="#">About</a>
+        <a href="#">Contact</a>
+    </nav>
+    <main>
+        <h2>Sign Up</h2>
+        
+        
+        <form action="formprocessing.html" method="post" id="signup-form">
+            <fieldset>
+                <legend>Account</legend>
+                <div class="form-row">
+                    <label for="personname">Full Name :</label>
+                    <input id="personname" type="text" name="fullname" placeholder="Full Name">
+                </div>
+                <div class="form-row">
+                    <label for="personemail">Email :</label>
+                    <input id="personemail" type="email" name="email" placeholder="Email">
+                </div>
+                <div class="form-row">
+                    <label for="age">Age:</label>
+                    <input id="age" type="number" name="age" min="1" max="1000">
+                </div>
+                <div class="form-row">
+                    <label for="personpassword">Password :</label>
+                    <input id="personpassword" type="password" name="pass">
+                </div>
+                <div class="form-row">
+                    <label for="state">State</label>
+                    <select name="state" id="state">
+                        <option value="blank">--------</option>
+                        <option value="CA">California</option>
+                        <option value="HI">Hawaii</option>
+                        <option value="UT">Utah</option>
+                    </select>
+                </div>
+                <div class="form-row">
+                    <label><input type="checkbox" name="remember">Remember Me?</label>
+                </div>
+                <fieldset>
+                    <legend>Select your Gender:</legend>
+
+                    <label>
+                        <input type="radio" name="gender" value="male">Male
+                    </label>
+                    <label>
+                        <input type="radio" name="gender" value="female">Female
+                    </label>
+                </fieldset>
+                <div class="form-row">
+                <label for="comments">Comments</label>
+                <textarea name="comments" id="comments"></textarea>
+                </div>
+                <div class="form-row">
+                <input type="submit">
+                </div>
+                <div id="message"></div>
+            </fieldset>   
+        </form>
+        <p>1. AJAX allows JavaScript to receive and send data at the background without restting the whole page.</p>
+        <p>2. Keeping JS is a seperate file makes it easier to read the HTML code, it also makes editng the script more easier.</p>
+        <p>3. I check console on DevTools for error message. The error shows where the problem is, by clicking the error, it will automatically take me to the lineof code where the problem is.</p>
+        <p>4. The Ids used in my script includes signup-form, personname, personemail, personpassword, age, and message. The Ids matches my HTML so no error messages were shown.</p>
+    </main>
+    <footer>
+    <p>&copy; 2026 MingZhong Yu</p>
+    </footer> 
+    <script src="form2.js"></script>
+</body> 
+</html>
